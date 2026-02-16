@@ -1,6 +1,6 @@
 {
   "name": "vuedit-image-editor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Pintura-like image editor Vue 3 component powered by Fabric.js",
   "type": "module",
   "main": "dist/vuedit-image-editor.umd.js",
