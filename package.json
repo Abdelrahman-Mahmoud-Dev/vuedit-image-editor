@@ -1,0 +1,73 @@
+{
+  "name": "vuedit-image-editor",
+  "version": "0.1.0",
+  "description": "A Pintura-like image editor Vue 3 component powered by Fabric.js",
+  "type": "module",
+  "main": "dist/vuedit-image-editor.umd.js",
+  "module": "dist/vuedit-image-editor.es.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vuedit-image-editor.es.js",
+      "require": "./dist/vuedit-image-editor.umd.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "style": "dist/style.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:only": "vite build",
+    "preview": "vite preview",
+    "test:integration": "node test/integration.js",
+    "prepublishOnly": "npm run build",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:first": "standard-version --first-release"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "fabric": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vitejs/plugin-vue": "^4.6.2",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.7.0",
+    "vue": "^3.4.0",
+    "vue-tsc": "^2.2.0"
+  },
+  "keywords": [
+    "vue",
+    "image-editor",
+    "fabric",
+    "canvas",
+    "crop",
+    "filters",
+    "drawing",
+    "vue3",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Abdelrahman-Mahmoud-Dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdelrahman-Mahmoud-Dev/vuedit-image-editor.git"
+  },
+  "homepage": "https://github.com/Abdelrahman-Mahmoud-Dev/vuedit-image-editor#readme",
+  "bugs": {
+    "url": "https://github.com/Abdelrahman-Mahmoud-Dev/vuedit-image-editor/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

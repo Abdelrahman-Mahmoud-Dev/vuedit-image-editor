@@ -1,0 +1,13 @@
+{
+  "types": [
+    { "type": "feat", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "perf", "section": "Performance" },
+    { "type": "refactor", "section": "Refactoring" },
+    { "type": "docs", "hidden": true },
+    { "type": "style", "hidden": true },
+    { "type": "chore", "hidden": true }
+  ],
+  "commitUrlFormat": "https://github.com/Abdelrahman-Mahmoud-Dev/vuedit-image-editor/commit/{{hash}}",
+  "compareUrlFormat": "https://github.com/Abdelrahman-Mahmoud-Dev/vuedit-image-editor/compare/{{previousTag}}...{{currentTag}}"
+}
